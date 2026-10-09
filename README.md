@@ -35,3 +35,16 @@ Il menù (`js/menu-data.js`) contiene **7 categorie e 61 card dimostrative**. Le
 ## Requisiti
 
 Qualunque browser moderno con HTML5, CSS e JavaScript. Nessuna dipendenza esterna obbligatoria. Per provare il responsive, apri gli strumenti sviluppatore del browser e attiva la vista dispositivo, oppure apri il sito direttamente da un telefono.
+
+
+### Marchio aggiornato
+
+Le due immagini fornite per il marchio sono state trasformate in maschere PNG con sfondo trasparente:
+
+- `img/logo-posate-mask.png` — piatto, forchetta e coltello (nuovo simbolo del logo)
+- `img/logo-scritta-mask.png` — scritta calligrafica originale “La Casareccia”
+- `img/favicon.png` — icona della scheda del browser
+
+Il CSS colora le maschere di bordeaux nell'intestazione e di bianco nel footer.
+La scritta riproduce fedelmente la **grafia dell'immagine**: non è stato incluso né distribuito alcun file di font.
+Il marchio compare in tutte le pagine, compreso il titolo principale della Home.

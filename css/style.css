@@ -84,3 +84,74 @@ dialog{border:0;padding:0;max-width:min(790px,calc(100vw - 28px));width:100%;bor
 
 /* Contrasto corretto del marchio nel footer scuro. */
 .site-footer .footer-brand { color:#fff; }
+
+
+/* Identità visiva: logo e calligrafia ricavati dalle immagini ufficiali fornite. */
+.brand-icon {
+  display:block;
+  width:64px;
+  height:58px;
+  flex:none;
+  background-color:var(--wine);
+  -webkit-mask:url('../img/logo-posate-mask.png') center / contain no-repeat;
+  mask:url('../img/logo-posate-mask.png') center / contain no-repeat;
+}
+.brand {gap:10px;}
+.brand-name {
+  display:block;
+  width:226px;
+  height:auto;
+  aspect-ratio: 1258 / 313;
+  flex:none;
+  font-size:0 !important;
+  line-height:0;
+  letter-spacing:0;
+  background-color:var(--wine);
+  -webkit-mask:url('../img/logo-scritta-mask.png') center / contain no-repeat;
+  mask:url('../img/logo-scritta-mask.png') center / contain no-repeat;
+}
+.brand-subtitle {margin-top:2px;text-align:center;letter-spacing:.26em;}
+.footer-brand .brand-icon {width:53px;height:45px;background-color:white;}
+.footer-brand .brand-name {width:174px;background-color:white;}
+.footer-brand .brand-subtitle {margin-top:2px;letter-spacing:.18em;}
+.footer-tagline {margin-left:63px;}
+.hero h1 .hero-wordmark {
+  display:block;
+  width:min(100%,520px);
+  height:auto;
+  aspect-ratio:1258 / 313;
+  margin:0 auto 2px;
+  font-size:0 !important;
+  line-height:0;
+  letter-spacing:0;
+  background-color:white;
+  -webkit-mask:url('../img/logo-scritta-mask.png') center / contain no-repeat;
+  mask:url('../img/logo-scritta-mask.png') center / contain no-repeat;
+}
+.hero h1 .hero-type {margin-top:0;letter-spacing:-.025em;}
+@media(max-width:1240px) {
+  .brand-icon {width:55px;height:51px;}
+  .brand-name {width:194px;}
+  .brand-subtitle {font-size:.54rem;}
+}
+@media(max-width:900px) {
+  .brand-icon {width:53px;height:48px;}
+  .brand-name {width:210px;}
+  .brand-subtitle {font-size:.54rem;}
+}
+@media(max-width:620px) {
+  .brand {gap:7px;}
+  .brand-icon {width:45px;height:43px;}
+  .brand-name {width:178px;}
+  .brand-subtitle {font-size:.43rem;letter-spacing:.22em;margin-top:1px;}
+  .footer-brand .brand-icon {width:50px;height:43px;}
+  .footer-brand .brand-name {width:174px;}
+  .hero h1 .hero-wordmark {width:min(100%,315px);margin-bottom:5px;}
+  .hero h1 .hero-type {font-size:.57em;}
+}
+@media(max-width:365px) {
+  .brand-icon {width:40px;height:40px;}
+  .brand-name {width:152px;}
+  .brand-subtitle {font-size:.39rem;letter-spacing:.16em;}
+  .hero h1 .hero-wordmark {width:min(100%,285px);}
+}
