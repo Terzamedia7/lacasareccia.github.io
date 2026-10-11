@@ -11,8 +11,7 @@ Apri `index.html` facendo doppio clic: le pagine, i caroselli, la ricerca e i po
 - `index.html` — Home, menù in evidenza, servizi, indirizzo e orari.
 - `menu.html` — sette categorie e 61 card cliccabili con schede di dettaglio.
 - `ristorante.html` — descrizione del locale.
-- `galleria.html` — galleria di immagini illustrative.
-- `contatti.html` — contatti, indicazioni stradali, orari e sezione WhatsApp.
+- `contatti.html` — pagina unica “Dove siamo e contatti”, con indicazioni stradali, orari e sezione WhatsApp.
 - `privacy.html` — note e trasparenza sul sito.
 - `css/style.css` — tutto lo stile, inclusi desktop/mobile e popup.
 - `js/script.js` — menu mobile, caroselli, ricerca, dettagli, popup e attivazione WhatsApp.
@@ -48,3 +47,22 @@ Le due immagini fornite per il marchio sono state trasformate in maschere PNG co
 Il CSS colora le maschere di bordeaux nell'intestazione e di bianco nel footer.
 La scritta riproduce fedelmente la **grafia dell'immagine**: non è stato incluso né distribuito alcun file di font.
 Il marchio compare in tutte le pagine, compreso il titolo principale della Home.
+
+## Banner uniforme sulle quattro pagine
+
+Le pagine **Home**, **Il Ristorante**, **Menù** e **Dove siamo e contatti** usano un unico componente CSS `.hero` con altezza condivisa: **334 px su desktop** e **410 px su smartphone**. La scritta grafica della Home è stata ridimensionata per adattarsi alla stessa altezza delle altre pagine.
+
+Per cambiare **in tutte e quattro le pagine** la fotografia di sfondo, modifica soltanto questa variabile nel file `css/style.css`, all'inizio del foglio:
+
+```css
+--hero-image: url('../img/hero-pizza.webp');
+```
+
+La foto viene mostrata con `background-size: cover`, che mantiene il rapporto tra larghezza e altezza originale, ritagliando se necessario i bordi anziché deformarla. Per impostare un'altra fotografia, aggiungila in `img/` e modifica il nome del file in questa variabile. Non servono modifiche HTML o JavaScript.
+
+## Collegamenti social ufficiali indicati per il progetto
+
+- Facebook: https://www.facebook.com/p/La-Casareccia-100083202442578/?locale=it_IT
+- Instagram: https://www.instagram.com/lacasarecciaristopizza/
+
+I collegamenti aprono una nuova scheda. Le icone vettoriali SVG si trovano direttamente nei cinque file HTML, nella sezione Contatti e nel footer: nessuna dipendenza aggiuntiva.
